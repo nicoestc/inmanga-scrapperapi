@@ -108,6 +108,7 @@ app.get('/manga/chapter/get/:name/:chapterNumber/:chapterId', async (req, res) =
     res.json({ results: chapterPages });
 });
 
+app.use((_req, res) => res.json({ msg: '¿Que haces aqui papacs?' }));
 
 app.listen(
     3000,
